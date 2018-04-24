@@ -1,0 +1,40 @@
+<%include ../layout/header.ejs %>
+
+<form  method="POST" action="/posts/add" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="">ID</label>
+            <input  class="form-control" type="text" name="_id"   value=""><br>
+        </div>
+
+        <div class="form-group">
+            <label for="">Name</label>
+            <input class="form-control" type="text" name="Name" value=""><br>
+        </div>
+
+        <div class="form-group">
+                    <label for="">Password</label>
+                    <input class="form-control" type="password" name="password" value=""><br>
+        </div>
+
+        <div class="form-group">
+            <label for="">Email</label>
+            <input class="form-control" type="Email" name="Email" value=""><br>
+        </div>
+
+        <div class="form-group">
+            <label for="">Room No</label>
+            <input class="form-control" type="Number" name="Room_No" value=""><br>
+        </div>
+            
+        <div class="form-group">
+            <label for="">Ext</label>
+            <input class="form-control" type="Number" name="Ext" value=""><br>
+        </div>
+        <input type="file" name="image" value=""><br>
+            
+            <center><input class="btn btn-primary my-1" type="submit" value="save"></center>
+            </form>
+
+
+
+<%include ../layout/footer.ejs %>

@@ -1,0 +1,11 @@
+<%include ../layout/Hossam/header.ejs %>
+  <%if(msg){%>
+    <h1 style=" margin-left: 32%;"><%=msg%></h1>
+  <%}%>
+  <form method="post" action="/user/login" style="text-align:center; ">
+    <input type ="text" name="username" class="form-control" style="width:250px ;display: block; margin-left: 40%;margin-bottom: 20px;">
+
+    <input type="password" name="password" class="form-control" style="width:250px ;display: block; margin-left: 40%;margin-bottom: 20px;">
+    <input type="submit" value="login" class="btn btn-drak" style="background-color: #FBB448 !important;">
+   </form>
+   <%include ../layout/Hossam/footer.ejs%>

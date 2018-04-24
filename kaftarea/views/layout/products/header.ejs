@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    .a{
+
+      border: rgb(155, 231, 231) solid 2px;
+      background:  rgb(155, 231, 231);
+      padding: 5px;
+    }
+    a{
+
+      text-decoration: none;
+    }
+    ul{
+      list-style: none;
+      text-align: center;
+
+    }
+    li{
+      display: inline-block;
+      text-align: center;
+      padding: 10px;
+      
+      
+
+
+    }
+    img{
+    border-radius: 50%;
+    }
+    h3{
+
+      color: crimson;
+      font-family: fantasy;
+    }
+    table{
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 80%;
+     margin: 30px auto;
+
+    }
+    td,th{
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+
+
+    }
+    tr:nth-child(even){
+      background-color: #dddddd;
+
+    }
+
+    form{
+    border: teal solid 2px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+
+    }
+    input,select{
+
+    padding: 5px;
+    margin: 5px;
+
+    }
+    select{
+     
+      border-radius: 5px;
+      background-color: skyblue;
+      width: 120px;
+      height: 50px;
+
+    }
+    h1{
+      text-align: center;
+      color:crimson;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+        
+      <li><img  width="100px" height="100px" src="/imgs/1d8f3ad6dc1ac840a7d4548bb98ba372" alt=""></li>
+      <li> <h3>welcome <%= name %>  </h3></li>
+      <li><a class="a" href="/posts/list">List Users</a></li>      
+      <li><a class="a" href="/products/add">add product</a></li>
+      <li><a class="a" href="/products/list">list products</a></li>
+      <li><a class="a" href="/auth/logout">LogOut</a></li>
+    </ul>
+ 
+  

@@ -1,0 +1,28 @@
+
+
+<%include ../layout/products/header.ejs %>
+
+<h1> add product </h1>
+
+<form action="/products/add" method="post" enctype="multipart/form-data">
+  <input type="text" name="_id" value="" placeholder=" your id ! " required><br>
+
+  <input type="text" name="title" value="" placeholder=" product name ! " required><br>
+  <input type="text" name="price" value="" placeholder=" product price ! " required><br>
+  <select name="category" id="" required>
+      <option value="category">category</option>
+        <option value="hots">hots</option>
+        <option value="shochlets">shochlets</option>
+        <option value="cold">cold</option>
+  </select><br>
+
+  <!--<select name="user" id="" required>-->
+    <!--</option>-->
+
+
+  <input type="file" name="avatar" value="" required>
+
+    <input type="submit" value="save">
+</form>
+
+<%include ../layout/products/footer.ejs %>

@@ -1,0 +1,53 @@
+
+
+<%include ../layout/products/header.ejs %>
+<% if(msg){%>
+  <h3><%= msg %></h3>
+<%}%>
+
+<table class="tab" border="1" cellpadding="8" bgcolor="AliceBlue">
+  <tr>
+    <th>product id </th>
+    <th>product name </th>
+    <th>Customer</th>    
+    <th>product price</th>
+    <th>product category </th>
+    <th>product image</th>
+    <th>Action</th>
+   
+  </tr>
+
+  <% data.forEach(function(products){%>
+
+
+    <tr>
+      <td> <%= products._id %> </td>
+
+      <td> <%= products.name %> </td>
+      
+
+      
+      <td> <%= products.price %> </td>
+
+      <td> <%= products.category %> </td>
+      <td> <img width="150px" height="150px" src="/imgs/<%= products.picture %>" /> </td>
+
+
+    <td><a href="/products/edit/<%= products._id %>">edit</a>
+      <a href="/products/delete/<%= products._id %>">delete</a></td>
+    </tr>
+
+
+
+
+<%  }) %>
+
+</table>
+<div><ul>
+    <% for(var i=1; i<=data.pages ; i++){%>
+        <li><a href="/products/list/<%=i%>"><%=i%></a></li>
+        <%}%>
+      </ul>
+</div>
+
+<%include ../layout/products/footer.ejs %>

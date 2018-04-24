@@ -1,0 +1,32 @@
+<%include ../layout/products/header.ejs %>
+
+<h1> edit product </h1>
+
+<!--<form action="" method="post" >
+  <input type="text" disabled readonly name="_id" value="<%= obj._id%>" placeholder=" your id ! "><br>
+  <input type="text" name="title" value="<%= obj.title%>" placeholder=" your title ! "><br>
+    
+
+    <input type="submit" value="save">
+</form>-->
+
+
+<form action="" method="post" >
+  <input type="text" name="_id"  disabled readonly value="<%= obj._id%>" placeholder=" your id ! " required><br>
+
+  <input type="text" name="name"  disabled readonly value="<%= obj.name%>" placeholder=" product name ! " required><br>
+  <input type="text" name="price" value="<%= obj.price%>" placeholder=" product price ! " required><br>
+  <select name="category" id=""  disabled readonly required>
+      <option value="category">category</option>
+        <option value="hots">hots</option>
+        <option value="shochlets">shochlets</option>
+        <option value="cold">cold</option>
+
+  </select><br>
+
+  <input type="file" name="avatar" value=""  disabled readonly required>
+
+    <input type="submit" value="save">
+</form>
+
+<%include ../layout/products/footer.ejs %>

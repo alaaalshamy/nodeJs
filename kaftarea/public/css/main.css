@@ -1,0 +1,223 @@
+body{
+    background-color: #483b33;
+    outline: none;
+    -moz-user-select: none;
+    user-focus: none;
+    user-select: none;
+}
+nav{
+
+}
+.Kafatrea{
+    color: white !important;
+    font-size: 30px;
+    margin-right: 240px;
+    margin-left: 270px;
+    font-family: "Kaushan Script" !important;
+}
+.Kafatrea:hover{
+    color: #FBB448 !important;
+
+}
+.nav-ul{
+    margin-right: 0px !important;
+}
+.Home{
+    font-size: 20px;
+    margin-left: 55px;
+    text-decoration: none;
+    margin-right: 35px;
+    color: white !important;
+    font-family: "Lato", Arial, sans-serif;
+}
+.order,.name,.logout{
+    font-family: "Lato", Arial, sans-serif;
+    margin-right: 35px;
+    color: white !important;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.order:hover,
+.Home:hover,
+.logout:hover{
+    color: #FBB448 !important;
+    text-decoration: none;
+}
+.input-search:focus{
+    border: 1px solid #FBB448 !important;
+}
+.form-search{
+
+}
+
+.btn-search
+{
+    color: white !important;
+border: 1px solid  white !important;;
+}
+
+h1{
+    padding-left: 200px;
+    margin-top: 25px;
+
+    color: white !important;
+    font-size: 50px !important;
+    font-family: "Kaushan Script" !important;
+
+}
+
+
+.table-meal{
+    margin-top: 30px;
+    width: 100%;
+    height: 650px;
+/*    border: 1px solid white; */
+}
+
+/*table left*/
+.table-left{
+    width: 30%;
+    height: 90%;
+    background-color: #24201e !important;
+    border-top:10px solid #fab347 ;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.resrv{
+    font-size: 25px;
+    margin-left: 20%;
+    color: white !important;
+    font-family: "Kaushan Script" !important;
+
+}
+.table-resrv{
+    width: 95%;
+    margin-left: 7px;
+    height: 40%;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 8px;
+    color: #fff3cd;
+    overflow-y:scroll;
+}
+.table-resrv > .choose-meal{
+
+    width: 95%;
+    margin-left: 7px;
+    height: 18%;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: #fff3cd;
+    padding-top: 1px;
+    padding-left: 25px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.table-resrv > .choose-meal input{
+    width: 12%;
+    height: 30px;
+    border: 1px solid #fff3cd;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.notes {
+    width: 95%;
+    margin-left: 7px;
+    height: 20%;
+    background: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 8px;
+    color: #fff3cd;
+    overflow-y:scroll;
+    resize: none;
+    margin-top: 15px;
+}
+.Rooms{
+    width: 95%;
+    margin-left: 7px;
+    height: 20%;
+    background-color: #fab347;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 8px;
+    color: #fff3cd;
+    overflow-y:scroll;
+    resize: none;
+    margin-top: 15px;
+}
+.table-count{
+    width: 95%;
+    margin-left: 7px;
+    height: 10%;
+    padding-left: 20px;
+    padding-top: 8px;
+    color: #fff3cd;
+}
+.table-count > span{
+}
+.btn-confirm{
+    margin-left: 27%;
+    cursor: pointer;
+    border: 1px solid #fab347;
+    border-radius:5px ;
+    color: #fff3cd;
+    width: 40%;
+    height: 40px;
+    background-color: #fab347;
+}
+
+/*table right*/
+.table-right{
+    width: 60%;
+    height: 90%;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-top: 5px;
+   /* border: 1px solid white;*/
+    float: right;
+    overflow-y: scroll;
+}
+
+.table-right button{
+    cursor: pointer;
+    background:none ;
+    border: none;
+//    border: 1px solid #5a6268;
+    border-radius: 4px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+.table-right button:hover {
+   border: 1px solid #fab347;
+    border-radius: 4px;
+
+}
+
+.table-right p{
+    margin-bottom: 1px;
+    font-size: 20px;
+    color: #fff3cd;
+}
+.table-right .fa{
+    margin-top: 1px;
+    font-size: 30px;
+    color: #fab347;
+}
+
+
+
+
+
+
+
+
+
+

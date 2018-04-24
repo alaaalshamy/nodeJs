@@ -1,0 +1,31 @@
+<%include ../layout/header.ejs %>
+<form method="post" action="">
+<div class="form-group">
+<label for="">ID</label>
+<input class="form-control" type="text" name="_id" disabled readonly  value="<%= obj._id%>"><br>
+</div>
+<div class="form-group">
+<label for="">Name</label>
+<input class="form-control" type="text" name="Name" value="<%= obj.Name%>"><br>
+</div>
+<div class="form-group">
+<label for="">Email</label>
+<input class="form-control" type="Email" name="Email" value="<%= obj.Email%>"><br>
+</div>
+<!-- Password<input type="password" name="password" value="<%= obj.password%>"><br> -->
+<div class="form-group">
+<label for="">Room No</label>
+<input class="form-control" type="Number" name="Room_No" value="<%= obj.Room_No%>"><br>
+</div>
+
+<div class="form-group">
+<label for="">Ext</label>
+<input class="form-control" type="Number" name="Ext" value="<%= obj.Ext%>"><br>
+</div>
+
+<center><input class="btn btn-primary my-1" type="submit" value="save"></center>
+</form>
+
+
+
+<%include ../layout/footer.ejs %>

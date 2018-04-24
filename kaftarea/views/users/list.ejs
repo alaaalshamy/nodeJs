@@ -1,0 +1,75 @@
+<%include ../layout/Hossam/header.ejs %>
+
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav-ul">
+            <li class="nav-item active">
+                <a class="Home" href="/user/list">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="order" href="/user/myOrders">orders <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="logout" href="/auth/logout">logout <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+        <a class="navbar-brand Kafatrea" href="/user/list">Kafatrea</a>
+
+        <form class="form-inline my-2 my-lg-0 form-search">
+            <input class="form-control mr-sm-2 input-search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 btn-search" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<div class="container">
+
+
+    <h1> welcome <span class="username" style="color:  #FBB448;"><%= user %></span>, All in good <span style="color:  #FBB448;">taste!</span></h1>
+   <div class="table-meal">
+
+       <div class="table-left">
+            <p class="resrv">Table Reservation</p>
+            <div class="table-resrv">
+            </div>
+           <textarea name="" id="notes" class="notes" placeholder="AddNotes"></textarea>
+           <select name="" id="" class="form-control  Rooms">
+               <option value="Room1">Room1</option>
+               <option value="Room2">Room2</option>
+               <option value="Room3">Room3</option>
+           </select>
+
+           <div class="table-count">
+                <span > TOTLE : <span  class="gettotal"  style="margin-left:55%;">0</span>EGP</span>
+           </div>
+
+           <button class="btn-confirm">Confirm</button>
+       </div>
+
+       <div class="table-right">
+           <% resultsmeal.forEach(function (meals) {%>
+
+           <button class="btn-coffe" name="<%= meals.name %>"  price=" <%= meals.price %>">
+               <p>#<%= meals.name %>  <br/> price <%= meals.price %> EGP</p>
+                <i class="fa fa-coffee"></i>
+
+            </button>
+
+           <%})%>
+
+       </div>
+
+   </div>
+
+
+
+
+</div>
+<%include ../layout/Hossam/footer.ejs %>

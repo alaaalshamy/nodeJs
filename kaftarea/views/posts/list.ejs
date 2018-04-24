@@ -1,0 +1,72 @@
+<%include ../layout/header.ejs %>
+<% if(msg != ''){ %>
+    <h3 class="alert alert-success"><%= msg %></h3>
+<% } %>
+<form  class="" action="/posts/search">
+    <div class="form-group row">
+        <div class="col-11">
+            <input class="form-control" type="text" name="keyword" value="">
+        </div>
+        <div class="col-1">
+            <input type="submit" value="Search" class="btn btn-success">
+            
+        </div>
+    </div>
+    
+   
+</form>
+<table class="table table-bordered rounded">
+    <tr class="table-active" >
+        <th class="text-info">
+            User_id
+        </th >
+        <th class="text-info">
+            Name
+        </th>
+        <th class="text-info">
+            Email
+        </th>
+        <th class="text-info">
+            Room_No
+        </th>
+        <th class="text-info">
+            Ext
+        </th>
+        <th class="text-info">
+                Image
+        </th>
+        <th class="text-info">
+            Action
+        </th>
+    </tr>
+    <% data.forEach(function(users){ %>
+        <tr class="text-success">
+            <td >
+                    <%= users._id %> 
+            </td>
+            <td>
+                    <%= users.Name %> 
+            </td>
+            <td>
+                    <%= users.Email %> 
+            </td>
+            <td>
+                    <%= users.Room_No %> 
+            </td>
+            <td>
+                    <%= users.Ext %> 
+            </td>
+            <td style="text-align:center">
+                <img class="rounded-circle" width="100" height="100" class="img-rotated" src="/imgs/<%= users.image %>" alt="">
+                    
+            </td>
+            <td style="text-align:center">
+                <a class="btn btn-danger" href="/posts/delete/<%= users._id %>">Delete</a>
+                <a class="btn btn-primary" href="/posts/edit/<%= users._id %>">Edit</a>
+                
+            </td>
+            
+        </tr>
+    <% }) %> 
+</table>
+<%include ../layout/footer.ejs %>
